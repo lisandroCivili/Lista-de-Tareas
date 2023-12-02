@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#listContainer {
+    width: 350px; /* Ancho deseado del contenedor */
+    height: 50vh; /* Altura deseada del contenedor */
+    overflow-y: scroll; 
+    border: 1px solid #ccc; /* Añade un borde para mayor visibilidad */
+}
+
+#toDoList {
+    padding: 10px; /* Espaciado interno del contenido */
+}
+    
