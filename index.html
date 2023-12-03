@@ -25,25 +25,25 @@
           </nav>
     </header>
     <main class="flex-grow-1 bg-info-subtle d-flex flex-column justify-content-center">
-        <section class="d-flex justify-content-center">
-            <div  id="gameSection" class="d-flex flex-column align-items-center justify-content-center">
-                <form class="d-flex flex-column">
+        <section class="d-flex flex-column align-items-center">
+            <div  id="gameSection" class="d-flex flex-column align-items-center justify-content-center w-100">
+                <form id="form" class="d-flex flex-column w-50">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Ingresá una tarea</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="inputForm" class="form-label">Ingresá una tarea</label>
+                      <input type="text" class="form-control" id="inputForm" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    <button type="submit" class="btn btn-primary w-50 align-self-center">Cargar</button>
+                  </form>
+                  <button type="button" id="deleteBtn" class="btn btn-primary w-25 align-self-center mt-1">Eliminar</button>
             </div>
-            <div>
-                <ol>
-                    <li><p>hola</p></li>
-                </ol>
-            </div>
+            <div id="listContainer" class="mt-2 mb-2 p-1 w-50">
+              <ul id="ulList" class="list-group">  
+              </ul>
+          </div>
         </section>
     </main>
     <footer class="bg-dark text-light py-3 text-center">
-        
-      </footer>
+    </footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
